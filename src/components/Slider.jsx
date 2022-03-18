@@ -13,8 +13,8 @@ const Container = styled.div`
 
 const Arrow = styled.div`
     width: 50px;
-    height: 50px:
-    background-color: white;
+    height: 50px;
+    background-color: #fff7f7;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -22,8 +22,8 @@ const Arrow = styled.div`
     position: absolute;
     top: 0;
     bottom: 0;
-    left: ${props => props.direction === "left" && "10px"}
-    right: ${props => props.direction === "right" && "10px"}
+    left: ${(props) => props.direction === "left" && "10px"};
+    right: ${(props) => props.direction === "right" && "10px"};
     margin: auto;
     opacity: 0.5;
     cursor: pointer;
@@ -108,7 +108,7 @@ const Slider = () => {
                     </Slide>
                 ))}
             </Wrapper>
-            <Arrow direction='right'onClick={() => handleClick('right')}>
+            <Arrow direction='right' onClick={() => handleClick('right')}>
                 <ArrowRightOutlined />
             </Arrow>
         </Container>
