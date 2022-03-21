@@ -6,6 +6,28 @@ const Container = styled.div``;
 
 const Left = styled.div`
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+`;
+
+const Logo = styled.h1`
+    
+`;
+
+const Desc = styled.p`
+    margin: 20px 0; 
+`;
+
+const SocialContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+const SocialIcon = styled.div`
+    width: 40px;
+    height: 40px;
 `;
 
 const Center = styled.div`
@@ -15,18 +37,6 @@ const Center = styled.div`
 const Right = styled.div`
     flex: 1;
 `;
-
-const Logo = styled.h1``;
-
-const Desc = styled.p``;
-
-const SocialContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
-
-const SocialIcon = styled.div``;
 
 const Footer = () => {
     return (
